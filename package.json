@@ -22,6 +22,11 @@
     "helpers"
   ],
   "author": "Tom Marrs <thomasamarrs@comcast.net> (https://github.com/tmarrs)",
+  "contributors": {
+    "name": "Jim Lloyd",
+    "email": "jim.lloyd@gmail.com",
+    "url": "https://github.com/jimlloyd"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tmarrs/hb-interpolate-helpers/issues"
