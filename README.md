@@ -32,5 +32,5 @@ Note that read-package-json normalizes some fields.
 * The `--json [path]` and `--template [path]` arguments are required.
 * If the basename of the json path is `package.json`, hb-interpolate-helpers uses the node package [read-package-json](https://www.npmjs.com/package/read-package-json) to read the file, which normalizes some fields, in particular all [people fields](https://docs.npmjs.com/files/package.json#people-fields-author-contributors). Any other JSON file is returned directly as read.
 * The `--noEscape` option may be used to turn off Handlebars HTML escaping.
-* The `--file` option may be used to add in a Handlebars.
+* The `--file` option may be used to add in a Handlebars helper.
 
