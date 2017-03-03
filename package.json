@@ -1,31 +1,32 @@
 {
-  "name": "hb-interpolate",
+  "name": "hb-interpolate-helpers",
   "version": "1.0.0",
-  "description": "Interpolate a json file through a Handlebars template file to stdout.",
+  "description": "Interpolate a json file through a Handlebars template file (with optional helpers) to stdout.",
   "scripts": {
     "test": "./test.sh"
   },
   "bin": {
-    "hb-interpolate": "bin/hb-interpolate.js"
+    "hb-interpolate-helpers": "bin/hb-interpolate-helpers.js"
   },
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jimlloyd/hb-interpolate.git"
+    "url": "git+https://github.com/tmarrs/hb-interpolate-helpers.git"
   },
   "keywords": [
     "handlebars",
     "json",
     "interpolate",
     "render",
-    "cli"
+    "cli",
+    "helpers"
   ],
-  "author": "Jim Lloyd <jim.lloyd@gmail.com> (https://github.com/jimlloyd)",
+  "author": "Tom Marrs <thomasamarrs@comcast.net> (https://github.com/tmarrs)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jimlloyd/hb-interpolate/issues"
+    "url": "https://github.com/tmarrs/hb-interpolate-helpers/issues"
   },
-  "homepage": "https://github.com/jimlloyd/hb-interpolate",
+  "homepage": "https://github.com/tmarrs/hb-interpolate-helpers",
   "dependencies": {
     "bluebird": "^2.9.25",
     "chalk": "^1.0.0",

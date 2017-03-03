@@ -1,4 +1,4 @@
 // nominal.template
-hb-interpolate
-git+https://github.com/jimlloyd/hb-interpolate.git
-Jim Lloyd <mailto:Jim Lloyd>
+hb-interpolate-helpers
+git+https://github.com/tmarrs/hb-interpolate-helpers.git
+Tom Marrs <mailto:Tom Marrs>
