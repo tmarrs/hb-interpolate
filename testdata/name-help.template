@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Names</title>
+  </head>
+  <body>
+    <ul>
+    {{#each names}}
+      <li>{{prefix}} {{fullName .}}</li>
+    {{/each}}
+    </ul>
+  </body>
+</html>
