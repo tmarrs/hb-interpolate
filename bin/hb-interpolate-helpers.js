@@ -10,7 +10,6 @@ var fs = require('fs');
 var Handlebars = require('handlebars');
 var path = require('path');
 var program = require('commander');
-var util = require('util');
 
 var dlog = debug('interpolate');
 
