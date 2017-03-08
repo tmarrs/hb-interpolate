@@ -28,4 +28,4 @@ testHelpers.registerHelpers = function registerHelpers(Handlebars) {
 };
 
 
-module.exports = testHelpers
+module.exports = testHelpers;
