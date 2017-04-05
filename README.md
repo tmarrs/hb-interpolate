@@ -13,7 +13,7 @@ hb-interpolate-helpers
 
 
 ## About
-`hb-interpolate-helpers` (based on [`hb-interpolate`](https://github.com/jimlloyd/hb-interpolate.git)) is a very simple command line tool that reads a `.json` file and a Handlebars template file, and then writes the implied interpolation to stdout. This project was forked from 
+`hb-interpolate-helpers` (based on [`hb-interpolate`](https://www.npmjs.com/package/hb-interpolate)) is a very simple command line tool that reads a `.json` file and a Handlebars template file, and then writes the implied interpolation to stdout. This project was forked from 
 [`hb-interpolate`](https://github.com/jimlloyd/hb-interpolate.git), and adds the ability to pass in an optional Handlebars helpers file.
 
 
@@ -41,7 +41,7 @@ Note that read-package-json normalizes some fields.
 ## Notes
 
 * The `--json [path]` and `--template [path]` arguments are required.
-* If the basename of the json path is `package.json`, hb-interpolate-helpers uses the node package [read-package-json](https://www.npmjs.com/package/read-package-json) to read the file, which normalizes some fields, in particular all [people fields](https://docs.npmjs.com/files/package.json#people-fields-author-contributors). Any other JSON file is returned directly as read.
+* If the basename of the json path is `package.json`, `hb-interpolate-helpers` uses the node package [read-package-json](https://www.npmjs.com/package/read-package-json) to read the file, which normalizes some fields, in particular all [people fields](https://docs.npmjs.com/files/package.json#people-fields-author-contributors). Any other JSON file is returned directly as read.
 * The `--noEscape` option may be used to turn off Handlebars HTML escaping.
 * The `--file` option may be used to add in a Handlebars helpers file.
 
@@ -63,9 +63,9 @@ with `package.json`.
 
 Please see the following for more information:
 
-* Here's a sample Handlebars helpers file that follows the above instructions and integrates with `hb-interpolate-helpers`: [testHelpers.js](https://github.com/tmarrs/hb-interpolate-helpers/blob/master/testdata/testHelpers.js).
+* Here's a sample Handlebars helpers file that follows the above instructions and integrates with `hb-interpolate-helpers` - [testHelpers.js](https://github.com/tmarrs/hb-interpolate-helpers/blob/master/testdata/testHelpers.js).
   * This project's [`test.sh` script](https://github.com/tmarrs/hb-interpolate-helpers/blob/master/test.sh) shows an example of how to use the helpers file. 
-* For more information on how `registerHelpers()` works, please see: [Handlebars API Reference](http://handlebarsjs.com/reference.html).
+* For more information on how `registerHelpers()` works, please see the [Handlebars API Reference](http://handlebarsjs.com/reference.html).
 * The `registerHelpers()` method enables the developer to extend this utility. This follows the 
 principle of [Inversion of Control](https://martinfowler.com/bliki/InversionOfControl.html).
 * To learn more about Node.js modules, please see SitePoint's excellent article on [Understanding module.exports and exports in Node.js](https://www.sitepoint.com/understanding-module-exports-exports-node-js).
