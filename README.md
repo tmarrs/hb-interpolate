@@ -52,9 +52,9 @@ more complex logic to Handlebars template processing. Here's how to create a Han
 
 * Create helper functions. There's no need to export these functions - just keep them internal.
 * Create and export method called `registerHelpers()` that takes a Handlebars object as a parameter.
-** Use the module exports mechanism from Node.js. 
-** Register all your helpers with the `Handlebars.registerHelper()` method. You can register each helper by name or with a single object.
-** `hb-interpolate-helpers` has already initialized the Handlebars object, so you only need to call 
+  * Use the module exports mechanism from Node.js. 
+  * Register all your helpers with the `Handlebars.registerHelper()` method. You can register each helper by name or with a single object.
+  * `hb-interpolate-helpers` has already initialized the Handlebars object, so you only need to call 
 `registerHelpers()`. Also, there's no need to do a `require()` on Handlebars or setup a Node.js project
 with `package.json`.
 
@@ -64,7 +64,7 @@ with `package.json`.
 Please see the following for more information:
 
 * Here's a sample Handlebars helpers file that follows the above instructions and integrates with `hb-interpolate-helpers`: [testHelpers.js](https://github.com/tmarrs/hb-interpolate-helpers/blob/master/testdata/testHelpers.js).
-** This project's [`test.sh` script](https://github.com/tmarrs/hb-interpolate-helpers/blob/master/test.sh) shows an example of how to use the helpers file. 
+  * This project's [`test.sh` script](https://github.com/tmarrs/hb-interpolate-helpers/blob/master/test.sh) shows an example of how to use the helpers file. 
 * For more information on how `registerHelpers()` works, please see: [Handlebars API Reference](http://handlebarsjs.com/reference.html).
 * The `registerHelpers()` method enables the developer to extend this utility. This follows the 
 principle of [Inversion of Control](https://martinfowler.com/bliki/InversionOfControl.html).
